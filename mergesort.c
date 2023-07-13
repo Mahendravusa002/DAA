@@ -50,7 +50,7 @@ void mergesort(int ar[],int l,int r)
 	{
 		int mid=l+(r-l)/2;
 		mergesort(ar,l,mid);
-		mergesort(ar,mid,r);
+		mergesort(ar,mid+1,r);
 		merge(ar,l,mid,r);
 	}
 }
